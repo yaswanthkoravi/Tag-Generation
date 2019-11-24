@@ -1,0 +1,29 @@
+<html>
+<head>
+  <style>
+        body, html {
+    margin: 0;
+    font-family: sans-serif;
+background-color:#f0f0f0;
+}
+  </style>
+</head>
+<body>
+    <h3>Auotmatic tag generation</h3>
+
+<div>
+  <form action="/predict" method="POST">
+    <label for="title">Title</label>
+      <textarea name="title" rows="5" cols="100">
+        {{title}}
+      </textarea>
+    <br>
+    <label for="description">Description</label>
+      <textarea name="description" rows="15" cols="100">{{des}}</textarea>
+    <br>
+    <h3>{{prediction}}</h3>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+</html>
